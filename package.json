@@ -1,0 +1,10 @@
+{
+  "name": "nft-claim-campaign",
+  "version": "1.0.0",
+  "description": "A monorepo to deploy a claim NFT plateform on XPRNetwork",
+  "main": "index.js",
+  "repository": "git@github-remy:XPRNetwork/nft-claim-campaign.git",
+  "author": "RockerOne <@rockerone>",
+  "license": "MIT",
+  "private": true
+}
