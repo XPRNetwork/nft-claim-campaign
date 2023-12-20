@@ -6,5 +6,9 @@
   "repository": "git@github-remy:XPRNetwork/nft-claim-campaign.git",
   "author": "RockerOne <@rockerone>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "contracts/*"
+  ]
 }
