@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@proton/js": "^27.13.0",
     "@proton/web-sdk": "^4.2.16",
+    "atomicassets": "^1.5.1",
+    "classnames": "^2.3.2",
     "daisyui": "^4.4.22",
+    "dayjs": "^1.11.10",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

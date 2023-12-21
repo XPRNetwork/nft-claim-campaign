@@ -1,0 +1,73 @@
+{
+  "title": "NFT Claim",
+  "description": "A cool NextJS monorepo app that allow people to claim NFT from you project !",
+  "theme": "forest",
+  "date-format": "DD/MM/YYYY HH:mm",
+  "main-menu": [
+    {
+      "label": "The project",
+      "href": "https://xprnetwork.org"
+    },
+    {
+      "label": "Market",
+      "href": "https://soon.market"
+    }
+  ],
+  "footer": {
+    "legal-name": "RockerOne LTD.",
+    "baseline": "From 🇧🇪 with ❤️",
+    "navs": [
+      {
+        "label": "Services",
+        "items": [
+          {
+            "label": "Development",
+            "href": "https://github.com/superstrong_be"
+          },
+          {
+            "label": "Design",
+            "href": "https://github.com/superstrong_be"
+          },
+          {
+            "label": "Smart contract",
+            "href": "https://github.com/superstrong_be"
+          }
+        ]
+      },
+      {
+        "label": "Company",
+        "items": [
+          {
+            "label": "Metallicus",
+            "href": "https://www.metallicus.com/"
+          },
+          {
+            "label": "XPRNetwork",
+            "href": "https://xprnetwork.org"
+          }
+        ]
+      }
+    ]
+  },
+  "wallet": {
+    "connect-button": "Connect Webauth",
+    "logout-button": "Logout"
+  },
+  "claimable": {
+    "list": {
+      "active-claim-button-label": "Claim it now",
+      "incoming-claim-button-label": "Will be claimable by",
+      "missed-claim-label": "Oh you missed it!"
+    },
+    "details": {
+      "active-claim-button-label": "Claim ",
+      "incoming-claim-badge": "Claimable by",
+      "incoming-claim-button-label": "Come back latter!",
+      "missed-claim-label": "Oh you missed it!"
+    },
+    "modal": {
+      "title": "Congrat!",
+      "content": "You've claimed the NFT, hold on to it tight or gift it to a friend."
+    }
+  }
+}
