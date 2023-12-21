@@ -1,5 +1,27 @@
 # NFT-claim
 
+# Getting started
+## Install NodeJS
+
+First you will need NodeJs. For the installation, to have the up-to-date installation procedure that suits your platform, it is best to refer to the online documentation of NodeJS
+[https://nodejs.org/en/download](https://nodejs.org/en/download)
+
+Once your installation is complete, open your terminal and enter the following command:
+
+```bash
+$ node -v
+
+```
+
+After the command, the terminal should return a similar result
+
+```bash
+v21.1.0
+
+```
+
+**✅ NodeJS is now ready to use!**
+
 # Project Structure
 
 This project is a monorepo, which means it is a GIT project that contains multiple projects. In the root folder, you will find:
@@ -49,6 +71,30 @@ The environment variables in the `app/web/.env` file are information that will b
 
 They are mainly used in this case to configure the connection with XPRNetwork and atomicassets.
 
+## Deploy with vercel 
+
+First you have to create a free (for real) account on [https://vercel.com/](vercel)
+
+Than on your terminal, reach the `apps/web` folder
+
+```bash
+$ cd absolute/path/to/project/**apps/web**
+```
+
+Than login to your vercel account, please follow the instruction on your terminal 
+
+```bash
+$ vercel login
+```
+
+Now link the dApp code folder with vercel project
+
+```bash
+$ vercel pull 
+```
+
+The terminal will prompt some basic question, please follow the instruction on your terminal 
+
 <aside>
 🚨 Do not include your private keys in the .env file! Since the dApp is a frontend application, the keys will be visible in the app's code directly from the browser!
 
@@ -60,29 +106,7 @@ They are mainly used in this case to configure the connection with XPRNetwork an
 
 To set up your account and link it to the smart contract, you will need:
 
-- NodeJS
 - @proton/cli
-
-### Install NodeJS
-
-For the installation of Node JS, to have the up-to-date installation procedure that suits your platform, it is best to refer to the online documentation of NodeJS
-[https://nodejs.org/en/download](https://nodejs.org/en/download)
-
-Once your installation is complete, open your terminal and enter the following command:
-
-```bash
-$ node -v
-
-```
-
-After the command, the terminal should return a similar result
-
-```bash
-v21.1.0
-
-```
-
-**✅ NodeJS is now ready to use!**
 
 ### Install @proton/CLI
 
