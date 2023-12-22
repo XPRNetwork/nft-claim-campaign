@@ -469,6 +469,78 @@ You should see:
 ![Capture_decran_2023-12-21_a_11 21 41](https://github.com/XPRNetwork/nft-claim-campaign/assets/1812457/3cc57787-9d69-4f30-8b25-adc99efbf8fa)
 ![Capture_decran_2023-12-21_a_11 22 07](https://github.com/XPRNetwork/nft-claim-campaign/assets/1812457/4a333702-5764-4b16-a1c5-c1c047ec37f4)
 
-
-
 # 😎 Congratulation the job is done
+
+# About the Smart contract
+
+## Concept
+
+When the user claim an asset the smart contract iterate through a list of registered `claimables` templates to find a if a template could be minted at current time in the name of the account who claim from the dApp . 
+
+If the contract found `claimables` template, the minted asset is sent to the account who claim, if not an error is sent to the dApp.
+
+## Actions
+
+### template.reg
+
+Allow smart contract owner to register a `claimable` template for a defined time span.
+
+**Arguments**
+
+- **templateId**
+The template from atomicassets  you want to allow mint.
+- **collectionName**
+The collection name from atomicassets where the template belong.
+- **activeStartTime** 
+Epoch time where the mint of the asset starts.
+- **activeEndTime** 
+Epoch time where the mint of the asset ends.
+
+### claim.mint
+
+Allow any one to claim a template mint if there is one active a time
+
+**Arguments**
+
+- **account**
+The account who claim an possibly active template.
+
+## Tables
+
+### claimables
+
+![Capture d’écran 2023-12-22 à 12 05 56](https://github.com/XPRNetwork/nft-claim-campaign/assets/1812457/add36847-07f6-43cd-a6ae-338f0e638ed1)
+
+
+The `claimables` table contains reference to the template that could be minted during a defined time span. Definition as follow:
+
+**Scope:** global (youaccname)
+
+**Fields:**
+
+- **templateId**
+The template from atomicassets  you want to allow mint
+- **collectionName**
+The collection name from atomicassets where the template belong
+- **activeStartTime** 
+Epoch time where the mint of the asset starts
+- **activeEndTime** 
+Epoch time where the mint of the asset ends
+
+### claims
+
+![Capture d’écran 2023-12-22 à 12 12 26](https://github.com/XPRNetwork/nft-claim-campaign/assets/1812457/db6fcdad-f3e7-41f3-8a1c-d36a943a918d)
+
+
+The `claims` table contains reference of template minted by user to avoid multiple mint form a single account.
+
+**Scope:** account
+
+**Fields:**
+
+- **templateId**
+The template from atomicassets  who was minted
+- **mintedAssetId**
+The produced asset id from atomicassets
+- **claimTime**
+Epoch time where the mint of the asset has occured
