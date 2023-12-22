@@ -544,3 +544,5 @@ The template from atomicassets  who was minted
 The produced asset id from atomicassets
 - **claimTime**
 Epoch time where the mint of the asset has occured
+
+**Now you know how to use the Smart contract!**
