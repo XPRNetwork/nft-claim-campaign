@@ -36,3 +36,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local env files
+.env*.local
+*.env
+
+# Contract 
+**/target
+**/deploy
+testnet.*
+mainnet.*
+makefile
